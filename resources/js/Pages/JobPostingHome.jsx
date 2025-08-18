@@ -4,6 +4,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { DateRangePicker } from "@/Components/date-range-picker";
 import Checkbox from "@/Components/Checkbox";
+import { faClock } from "@fortawesome/free-solid-svg-icons";
+import { faSuitcase } from "@fortawesome/free-solid-svg-icons";
+import { faMapLocation } from "@fortawesome/free-solid-svg-icons";
+import { faCalendar } from "@fortawesome/free-solid-svg-icons";
+import { Progress } from "@/Components/ui/progress";
+import { ArrowRight } from "lucide-react";
+
 import {
     Select,
     SelectContent,
@@ -198,7 +205,7 @@ export default function JobPostingHome() {
                         </CardContent>
                     </Card>
                 </div>
-                <div className="flex-1">
+                <div className="flex-1 space-y-5">
                     <div className="h-16 border-2 border-black/10 rounded-lg flex items-center px-5 gap-3">
                         <FontAwesomeIcon
                             icon={faMagnifyingGlass}
@@ -209,6 +216,271 @@ export default function JobPostingHome() {
                             className="outline-none border-none flex-1"
                             placeholder="Search Job Title or Keywords"
                         />
+                    </div>
+
+                    <div className="grid grid-cols-3 gap-5">
+                        <div className="w-full h-fit rounded-lg shadow-lg p-5 space-y-10">
+                            <section className="flex flex-col gap-1">
+                                <h1 className="text-xl font-bold">
+                                    Research and Development Officer
+                                </h1>
+                                <ul className="flex gap-3 text-sm text-gray-600">
+                                    <li>
+                                        <FontAwesomeIcon icon={faClock} /> Full
+                                        Time
+                                    </li>
+                                    <li>
+                                        <FontAwesomeIcon icon={faMapLocation} />{" "}
+                                        South Korea
+                                    </li>
+                                    <li>
+                                        <FontAwesomeIcon icon={faSuitcase} />{" "}
+                                        Remote
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section className="rounded-lg h-20 bg-gray-100 flex justify-between items-center p-5">
+                                <div className="flex flex-col flex-1">
+                                    <p className="font-bold text-lg">55</p>
+                                    <p className="text-gray-600 text-sm">
+                                        Candidates Applied
+                                    </p>
+                                </div>
+
+                                <div className="flex flex-col flex-1 pl-5 border-l border-black/20">
+                                    <p className="font-bold text-lg">55</p>
+                                    <p className="text-gray-600 text-sm">
+                                        Completed Interviews
+                                    </p>
+                                </div>
+                            </section>
+
+                            <section>
+                                <div className="flex items-center justify-between">
+                                    <p className="text-sm">
+                                        <FontAwesomeIcon
+                                            icon={faCalendar}
+                                            className="text-gray-600 mr-1"
+                                        />
+                                        Posted at 24 Jul - Close at 17 Sep
+                                    </p>
+                                    <p className="text-sm font-bold">
+                                        12 Days to go
+                                    </p>
+                                </div>
+                                <Progress value={33} className="mt-2" />
+                            </section>
+
+                            <section className="flex items-center justify-between">
+                                <p className="text-sm font-bold text-gray-600">
+                                    Created by AMAZON.
+                                </p>
+                                <p className="text-sm flex gap-1 font-bold">
+                                    <span className="underline">
+                                        View Details
+                                    </span>
+                                    <ArrowRight className="size-5" />
+                                </p>
+                            </section>
+                        </div>
+
+                        <div className="w-full h-fit rounded-lg shadow-lg p-5 space-y-10">
+                            <section className="flex flex-col gap-1">
+                                <h1 className="text-xl font-bold">
+                                    Research and Development Officer
+                                </h1>
+                                <ul className="flex gap-3 text-sm text-gray-600">
+                                    <li>
+                                        <FontAwesomeIcon icon={faClock} /> Full
+                                        Time
+                                    </li>
+                                    <li>
+                                        <FontAwesomeIcon icon={faMapLocation} />{" "}
+                                        South Korea
+                                    </li>
+                                    <li>
+                                        <FontAwesomeIcon icon={faSuitcase} />{" "}
+                                        Remote
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section className="rounded-lg h-20 bg-gray-100 flex justify-between items-center p-5">
+                                <div className="flex flex-col flex-1">
+                                    <p className="font-bold text-lg">55</p>
+                                    <p className="text-gray-600 text-sm">
+                                        Candidates Applied
+                                    </p>
+                                </div>
+
+                                <div className="flex flex-col flex-1 pl-5 border-l border-black/20">
+                                    <p className="font-bold text-lg">55</p>
+                                    <p className="text-gray-600 text-sm">
+                                        Completed Interviews
+                                    </p>
+                                </div>
+                            </section>
+
+                            <section>
+                                <div className="flex items-center justify-between">
+                                    <p className="text-sm">
+                                        <FontAwesomeIcon
+                                            icon={faCalendar}
+                                            className="text-gray-600 mr-1"
+                                        />
+                                        Posted at 24 Jul - Close at 17 Sep
+                                    </p>
+                                    <p className="text-sm font-bold">
+                                        12 Days to go
+                                    </p>
+                                </div>
+                                <Progress value={33} className="mt-2" />
+                            </section>
+
+                            <section className="flex items-center justify-between">
+                                <p className="text-sm font-bold text-gray-600">
+                                    Created by AMAZON.
+                                </p>
+                                <p className="text-sm flex gap-1 font-bold">
+                                    <span className="underline">
+                                        View Details
+                                    </span>
+                                    <ArrowRight className="size-5" />
+                                </p>
+                            </section>
+                        </div>
+                        <div className="w-full h-fit rounded-lg shadow-lg p-5 space-y-10">
+                            <section className="flex flex-col gap-1">
+                                <h1 className="text-xl font-bold">
+                                    Research and Development Officer
+                                </h1>
+                                <ul className="flex gap-3 text-sm text-gray-600">
+                                    <li>
+                                        <FontAwesomeIcon icon={faClock} /> Full
+                                        Time
+                                    </li>
+                                    <li>
+                                        <FontAwesomeIcon icon={faMapLocation} />{" "}
+                                        South Korea
+                                    </li>
+                                    <li>
+                                        <FontAwesomeIcon icon={faSuitcase} />{" "}
+                                        Remote
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section className="rounded-lg h-20 bg-gray-100 flex justify-between items-center p-5">
+                                <div className="flex flex-col flex-1">
+                                    <p className="font-bold text-lg">55</p>
+                                    <p className="text-gray-600 text-sm">
+                                        Candidates Applied
+                                    </p>
+                                </div>
+
+                                <div className="flex flex-col flex-1 pl-5 border-l border-black/20">
+                                    <p className="font-bold text-lg">55</p>
+                                    <p className="text-gray-600 text-sm">
+                                        Completed Interviews
+                                    </p>
+                                </div>
+                            </section>
+
+                            <section>
+                                <div className="flex items-center justify-between">
+                                    <p className="text-sm">
+                                        <FontAwesomeIcon
+                                            icon={faCalendar}
+                                            className="text-gray-600 mr-1"
+                                        />
+                                        Posted at 24 Jul - Close at 17 Sep
+                                    </p>
+                                    <p className="text-sm font-bold">
+                                        12 Days to go
+                                    </p>
+                                </div>
+                                <Progress value={33} className="mt-2" />
+                            </section>
+
+                            <section className="flex items-center justify-between">
+                                <p className="text-sm font-bold text-gray-600">
+                                    Created by AMAZON.
+                                </p>
+                                <p className="text-sm flex gap-1 font-bold">
+                                    <span className="underline">
+                                        View Details
+                                    </span>
+                                    <ArrowRight className="size-5" />
+                                </p>
+                            </section>
+                        </div>
+
+                        <div className="w-full h-fit rounded-lg shadow-lg p-5 space-y-10">
+                            <section className="flex flex-col gap-1">
+                                <h1 className="text-xl font-bold">
+                                    Research and Development Officer
+                                </h1>
+                                <ul className="flex gap-3 text-sm text-gray-600">
+                                    <li>
+                                        <FontAwesomeIcon icon={faClock} /> Full
+                                        Time
+                                    </li>
+                                    <li>
+                                        <FontAwesomeIcon icon={faMapLocation} />{" "}
+                                        South Korea
+                                    </li>
+                                    <li>
+                                        <FontAwesomeIcon icon={faSuitcase} />{" "}
+                                        Remote
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section className="rounded-lg h-20 bg-gray-100 flex justify-between items-center p-5">
+                                <div className="flex flex-col flex-1">
+                                    <p className="font-bold text-lg">55</p>
+                                    <p className="text-gray-600 text-sm">
+                                        Candidates Applied
+                                    </p>
+                                </div>
+
+                                <div className="flex flex-col flex-1 pl-5 border-l border-black/20">
+                                    <p className="font-bold text-lg">55</p>
+                                    <p className="text-gray-600 text-sm">
+                                        Completed Interviews
+                                    </p>
+                                </div>
+                            </section>
+
+                            <section>
+                                <div className="flex items-center justify-between">
+                                    <p className="text-sm">
+                                        <FontAwesomeIcon
+                                            icon={faCalendar}
+                                            className="text-gray-600 mr-1"
+                                        />
+                                        Posted at 24 Jul - Close at 17 Sep
+                                    </p>
+                                    <p className="text-sm font-bold">
+                                        12 Days to go
+                                    </p>
+                                </div>
+                                <Progress value={33} className="mt-2" />
+                            </section>
+
+                            <section className="flex items-center justify-between">
+                                <p className="text-sm font-bold text-gray-600">
+                                    Created by AMAZON.
+                                </p>
+                                <p className="text-sm flex gap-1 font-bold">
+                                    <span className="underline">
+                                        View Details
+                                    </span>
+                                    <ArrowRight className="size-5" />
+                                </p>
+                            </section>
+                        </div>
                     </div>
                 </div>
             </div>
